@@ -60,5 +60,5 @@ number_of_cases = lines.shift.to_i
 number_of_cases.times do |index|
   pancakes = lines.shift
   value = PancakeSolver.new(pancakes).flips_until_happy
-  puts "CASE \##{index + 1}: #{value}"
+  puts "Case \##{index + 1}: #{value}"
 end

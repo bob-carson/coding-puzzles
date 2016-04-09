@@ -25,15 +25,11 @@ def count_sheep(n)
   end
 end
 
-def output(num, value)
-
-end
-
 lines = STDIN.read.split("\n")
 number_of_cases = lines.shift.to_i
 
 number_of_cases.times do |index|
   n = lines.shift.to_i
   value = count_sheep(n)
-  puts "CASE \##{index + 1}: #{value}"
+  puts "Case \##{index + 1}: #{value}"
 end
